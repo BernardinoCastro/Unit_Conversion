@@ -10,7 +10,8 @@ units={
         'Foot':0.3048
     },
     'Mass':{
-        'Kilogram'
+        'Gram':0.001,
+        'Kilogram':1,
     }
 
 
