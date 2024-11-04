@@ -12,6 +12,9 @@ units={
     'Mass':{
         'Gram':0.001,
         'Kilogram':1,
+        'Miligram': 1e-6,
+        'Microgram': 1e-9,
+        
     }
 
 
