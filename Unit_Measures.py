@@ -188,8 +188,7 @@ def hide_frame():
 root = ctk.CTk()
 root.title("Unit Measures")
 root.geometry("300x400")
-root.after(201,lambda :root.iconbitmap("C:\\Users\\DELL\\Pictures\\Measurement_Tool_Small_Logo.png"))
-
+root.iconbitmap("C:\\Users\\DELL\\OneDrive\\Documents\\GitHub\\Python-project\\logo_eqj_icon.ico")
 
 
 menubar = tk.Menu(root)
