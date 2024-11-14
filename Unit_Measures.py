@@ -187,7 +187,7 @@ def hide_frame():
 #main window
 root = ctk.CTk()
 root.title("Unit Measures")
-root.geometry("300x400")
+root.geometry("280x300")
 root.iconbitmap("C:\\Users\\DELL\\OneDrive\\Documents\\GitHub\\Python-project\\logo_eqj_icon.ico")
 
 
