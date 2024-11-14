@@ -89,7 +89,9 @@ def convert_time(value, from_unit, to_unit):
         'minute': 60,
         'hour': 3600,
         'day': 86400,
+        'week':604800,
         'year': 31557600
+
     }
     from_unit = from_unit.lower().strip()
     to_unit = to_unit.lower().strip()
@@ -324,7 +326,7 @@ def calculate_conversion():
         result = convert_data_size(value, from_unit, to_unit)
 
     if result is not None:
-        result_label.configure(text=f"Result: {result:.5f}")
+        result_label.configure(text=f"Result: {to_unit} {result:.3f}")
     else:
         result_label.configure(text="Conversion failed due to invalid units!")
 
