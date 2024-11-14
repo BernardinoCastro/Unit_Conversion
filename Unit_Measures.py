@@ -49,7 +49,6 @@ def convert_weight(value, from_unit, to_unit):
     return value_in_kg / weight_units[to_unit]
 
 
-
 def convert_speed(value, from_unit, to_unit):
     speed_units = {
         'm/s': 1,
@@ -188,7 +187,7 @@ def hide_frame():
 root = ctk.CTk()
 root.title("Unit Measures")
 root.geometry("300x400")
-root.after(201,lambda :root.iconbitmap("C:\\Users\\DELL\\Pictures\\Measurement_Tool_Small_Logo.png"))
+customtkinter.set_appearance_mode("system")
 
 
 
