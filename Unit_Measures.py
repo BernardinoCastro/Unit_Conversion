@@ -226,10 +226,7 @@ to_unit_combobox.grid(row=3, column=1)
 # value
 value_label = ctk.CTkLabel(conversion_frame, text="Value:",text_color='black')
 value_label.grid(row=4, column=0)
-value_entry = ctk.CTkEntry(conversion_frame,font=("Arial",11), corner_radius=10)
-value_entry.grid(row=4, column=1)
-
-# Result
+value_entry = ctk.CTkEntry(conversion_frame,font=("Arial",11), corner_radi
 result_label = ctk.CTkLabel(conversion_frame, text="Result: ", font=("Helvetica", 14),text_color= 'black')
 result_label.grid(row=5, column=0, columnspan=2, pady=10)
 
