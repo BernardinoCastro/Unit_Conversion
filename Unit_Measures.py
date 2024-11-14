@@ -49,6 +49,7 @@ def convert_weight(value, from_unit, to_unit):
     return value_in_kg / weight_units[to_unit]
 
 
+
 def convert_speed(value, from_unit, to_unit):
     speed_units = {
         'm/s': 1,
@@ -187,7 +188,7 @@ def hide_frame():
 root = ctk.CTk()
 root.title("Unit Measures")
 root.geometry("300x400")
-customtkinter.set_appearance_mode("system")
+root.after(201,lambda :root.iconbitmap("C:\\Users\\DELL\\Pictures\\Measurement_Tool_Small_Logo.png"))
 
 
 
@@ -211,25 +212,25 @@ conversion_type_combobox.set('Length')
 conversion_type_combobox.grid(row=1, column=0, columnspan=2, pady=5)
 
 # from Unit
-from_unit_label = ctk.CTkLabel(conversion_frame ,text="From Unit:")
+from_unit_label = ctk.CTkLabel(conversion_frame ,text="From Unit:",text_color='black')
 from_unit_label.grid(row=2, column=0)
 from_unit_combobox = ttk.Combobox(conversion_frame,font=("Arial",12))
 from_unit_combobox.grid(row=2, column=1)
 
 # to Unit
-to_unit_label = ctk.CTkLabel(conversion_frame, text="To Unit:")
+to_unit_label = ctk.CTkLabel(conversion_frame, text="To Unit:",text_color='black')
 to_unit_label.grid(row=3, column=0)
 to_unit_combobox = ttk.Combobox(conversion_frame, font=("Arial",12))
 to_unit_combobox.grid(row=3, column=1)
 
 # value
-value_label = ctk.CTkLabel(conversion_frame, text="Value:")
+value_label = ctk.CTkLabel(conversion_frame, text="Value:",text_color='black')
 value_label.grid(row=4, column=0)
 value_entry = ctk.CTkEntry(conversion_frame,font=("Arial",11), corner_radius=10)
 value_entry.grid(row=4, column=1)
 
 # Result
-result_label = ctk.CTkLabel(conversion_frame, text="Result: ", font=("Helvetica", 14))
+result_label = ctk.CTkLabel(conversion_frame, text="Result: ", font=("Helvetica", 14),text_color= 'black')
 result_label.grid(row=5, column=0, columnspan=2, pady=10)
 
 
@@ -244,7 +245,7 @@ entry_time_diff.pack(pady=5)
 button_calculate_distance = ctk.CTkButton(thunderstorm_frame, text="Calculate Distance", command=calculate_thunderstorm_distance,corner_radius=10)
 button_calculate_distance.pack(pady=10)
 
-label_result_distance = ctk.CTkLabel(thunderstorm_frame, text="Distance to Thunderstorm:",)
+label_result_distance = ctk.CTkLabel(thunderstorm_frame, text="Distance to Thunderstorm:",text_color= 'black')
 label_result_distance.pack(pady=5)
 
 # Cliff Height Frame
